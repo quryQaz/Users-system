@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %} Login {% endblock %}</title>
+<link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
+</head>
+<body>
+
+  <hr>
+  <hr>
+
+<form action="{% url 'authenticatetion' %}" method="post">
+
+  {% csrf_token %}
+
+  <input type="text" required placeholder="Username" name="username"><br>
+  <input type="text" required placeholder="Paswword" name="password"><br>
+
+    <button type="submit" name="button">Log in</button>
+
+  </form>
+
+</body>
