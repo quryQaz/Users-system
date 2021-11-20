@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Embed PHP in a .html File</title>
+<title>Embed in a .html File</title>
 </head>
 <body>
  {{ .}}
