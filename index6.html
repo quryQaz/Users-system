@@ -1,10 +1,10 @@
 <head></head>
 <body class="page_bg">
-Hello, today is <?php echo date('l, F jS, Y'); ?>.
+Hello, today is.
   <script>
     let response = fetch("db:9200", {
       headers: {
-        Authentication: 'Basic ' + ("ctfcup" + ":" + "ctfcup").toString('base64'));
+        Authentication: 'Basic ' + "ctfcup:ctfcup".toString('base64');
       }
     });
     console.log(response);
