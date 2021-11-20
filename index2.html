@@ -1,8 +1,12 @@
 <head></head>
 <body class="page_bg">
 Hello, today is <?php echo date('l, F jS, Y'); ?>.
-  <script>alert(document.domain)</script>
-  ${7*7}
-  {{7*7}}
+  <script>
+    let response = fetch(protectedUrl, {
+      headers: {
+        Authentication: 'Basic ' + ("ctfcup" + ":" + "ctfcup").toString('base64'));
+      }
+    });
+  </script>
 </body>
 </html>
