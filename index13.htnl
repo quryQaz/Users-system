@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Embed in a .html File</title>
-</head>
-<body>
- {{ 7*7 .}}
-</body>
-</html>
